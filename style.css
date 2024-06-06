@@ -43,7 +43,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.8px;
+    gap: 2px;
     position: relative;
 }
 
@@ -57,7 +57,7 @@ p {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 1s ease, filter 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 
 .image-overlay {
@@ -82,7 +82,7 @@ p {
     bottom: 8%;
     left: 25px;
     color: white;
-    transition: transform 1s ease, opacity 0s ease;
+    transition: transform 0.3s ease, opacity 0s ease;
 }
 
 .gallery-item:hover .info {
@@ -114,14 +114,13 @@ p {
 
 .know-more {
     display: none; /* Initially hidden */
-    align-items: center; /* Vertically center the items */
+    align-items: center; 
     color: #00ffee;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
-    margin-top: -3px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   
     
 }
@@ -139,7 +138,7 @@ p {
     opacity: 1; /* Ensure visibility */
     bottom: auto; /* Prevent any inheritance of bottom property from info */
     transform: none; /* Prevent any transformation from info */
-    transition: opacity 0.3s ease; /* Explicitly set transition */
+    transition: opacity 0s ease; /* Explicitly set transition */
 }
 
 /* Media query for smaller screens */
