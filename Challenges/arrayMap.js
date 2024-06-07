@@ -18,7 +18,11 @@ function subarraySumExists(arr, target) {
     return false;
 }
 
-// Example usage:
-const arr = [4, 2, 7, 1, 9, 5];
-const target = 17;
-console.log(subarraySumExists(arr, target)); // Output: true
+// Get user input for array
+const userInputArray = prompt("Enter the array of integers separated by commas (e.g., 4,2,7,1,9,5):");
+const arr = userInputArray.split(',').map(Number);
+
+// Get user input for target sum
+const target = parseInt(prompt("Enter the target sum:"));
+
+console.log(subarraySumExists(arr, target));

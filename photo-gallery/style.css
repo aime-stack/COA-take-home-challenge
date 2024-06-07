@@ -1,0 +1,216 @@
+:root {
+    --bg-color: black;
+    --text-color: rgba(255, 255, 255, 1);
+    --second-color: #1AD1F3;
+    --font-size1: 38px;
+    --font-size2: 12px;
+    --font-weight1: 700;
+    --font-weight2: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    flex-direction: row;
+    gap: 2px;
+}
+
+h4 {
+    font-family: 'DIN Condensed Web', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 38px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: var(--text-color);
+    flex: none;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: flex-end;
+    text-transform: capitalize;
+    color: var(--text-color);
+    opacity: 0.7;
+    flex: none;
+    flex-grow: 0;
+    padding-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    position: relative;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Ensure sharp edges */
+    border-radius: 0;
+}
+
+.gallery img {
+    filter: brightness(75%);
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease, opacity 0.3s ease;/* Ensure sharp edges */
+    border-radius: 0;
+    object-fit: cover; /* Maintains aspect ratio and fits the image */
+}
+
+.image-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(180, 174, 174, 0.5); /* Semi-transparent black overlay */
+    display: flex; /* Hidden by default */
+    z-index: 1; /* Ensure it's above other content */
+}
+.shadow {
+    filter: brightness(100%);
+    position: absolute;
+    visibility: hidden;
+    left: -17.75%;
+    right: -17.75%;
+    top: -0.51%;
+    bottom: -0.68%;
+    left: calc(50% - 293px/2 - 0.75px);
+    top: calc(50% - 588px/2);
+    background: var(--bg-color);
+    background-blend-mode: hue;
+    
+}
+.info {
+    position: absolute;
+    bottom: 8%;
+    left: 25px;
+    color: var(--text-color);
+    cursor: default;
+}
+.info h4, .info p {
+    margin: 0;
+    color: inherit;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.03);
+    filter: grayscale(100%) blur(3px);
+    opacity: 0.25; /* Reduced brightness */
+}
+
+.gallery-item:hover .info {
+    bottom: 0px;
+    transform: translateY(-10%);
+    opacity: 1;
+}
+
+.gallery-item:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.663) blur(10px)) 100%;
+}
+
+.know-more {
+    display: none; /* Initially hidden */
+    align-items: center;
+    color: var(--second-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 10px; 
+    cursor: default;
+}
+
+.know-more svg {
+    margin-top: 17px;
+    margin-left: 8px; /* Space between text and SVG */
+    fill: var(--second-color);
+    width: 40px;
+    height: 40px;
+    
+}
+
+.gallery-item:hover .know-more {
+    display: flex; 
+    opacity: 1; 
+    bottom: auto; 
+    transform: none; 
+    transition: opacity 0s ease; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .info {
+        display: none;
+}
+}
+
+@media (max-width: 1200px) {
+    .gallery-item {
+        width: 30%;
+        height: 97.8vh;
+    }
+
+    .gallery-item img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery-item {
+        width: 48%;
+        height: 97.8vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-item img {
+        width: 100%;
+        height: 97.9vh;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    .h4 {
+        font-size: 1rem;
+    }
+
+    .p {
+        font-size: 0.7rem;
+    }
+
+    .gallery-item .info {
+        padding: 5px;
+    }
+
+    .gallery-item .cinfo h4 {
+        font-size: 1rem;
+    }
+
+    .gallery-item .info p {
+        font-size: 0.8rem;
+    }
+
+    .gallery-item .know-more {
+        font-size: 0.8rem;
+    }
+}
