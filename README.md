@@ -38,9 +38,8 @@ The Photo Gallery challenge involves creating a web page that displays a gallery
 
 ### Setup and Usage
 Follow these steps to set up and run the project locally:
- or Click here: https://github.com/ to access the project
 
-For Local installation
+Local installation
 1. Clone the repository:
 
 2. git clone https://github.com/aime-stack/COA-take-home-challenge.git
@@ -64,13 +63,13 @@ Use and test the interactive photo gallery:
 
 ### Desktop View screenshot
 ![Photo Gallery Screenshot](DesktopView.png)
-![Photo Gallery Screenshot](MobileView.png)
+
 
 ### Mobile View
-(Desktop.png)
+![Photo Gallery Screenshot](MobileView.png)
 
 ## Coding Challenge
-Description
+### Description
 The Coding Challenge involves implementing functions to manipulate arrays and strings. There are two files: arrayMap.js and stringTransform.js.
 
 Files
@@ -80,11 +79,15 @@ Files
 
 
 Getting Started
+To run the Coding Challenge copy codes respectively in any Jvascript Compiler and run the Coding Challenge
+
+
 To run these challenges locally, follow the steps below.
 
 Step 1:
 * Ensure you have Node.js installed.
 * And terminal like bash etc.
+
 Step 2:
 - Clone the repository
 - cd coa-take-home-challenge in your terminal
