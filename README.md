@@ -46,13 +46,12 @@ Local installation
 
 3. Navigate to the project directory:
 
-4. cd coa-photo-gallery
+4. use ```cd coa-take-home-challenge``` to change the directory
+5. Open the project in your code edito by using
 
-5. Open the project in your code editor:
+ ```code .``` to open such folder in your IDE
 
-6. code .
-
-7. Open the index.html file in your browser to view the photo gallery.
+7. Open the index.html file  that is in UI Challenge folder in your browser to view the photo gallery.
 
 For best practices 
 Use and test the interactive photo gallery:
@@ -73,8 +72,8 @@ Use and test the interactive photo gallery:
 The Coding Challenge involves implementing functions to manipulate arrays and strings. There are two files: arrayMap.js and stringTransform.js.
 
 Files
-- arrayMap.js: Contains functions of finding a contiguous subarray that sums up to the targeted sum.
-- stringTransform.js: Contains functions for transforming a string based on its length..
+- ```arrayMap.js```: Contains functions of finding a contiguous subarray that sums up to the targeted sum.
+- ```stringTransform.js```: Contains functions for transforming a string based on its length..
 
 
 
@@ -89,11 +88,11 @@ Step 1:
 * And terminal like bash etc.
 
 Step 2:
-- Clone the repository
-- cd coa-take-home-challenge in your terminal
-- cd Challenges in your terminal to dive into the challenge folder.
-- Type node arrayMap.js in your terminal to run the first challenges and get the results.
-- Type node stringTransform.js in your terminal to run the second challenges and get the results.
+- Clone the repository by running the following
+- ```cd Ccoa-take-home-challenge``` in your terminal
+- Use ```cd Coding Challenges``` in your terminal to dive into the challenge folder.
+- Type ```node arrayMap.js``` in your terminal to run the first challenges and get the results.
+- Lastly type ```node stringTransform.js``` in your terminal to run the second challenges and get the results.
 
 
 
