@@ -5,7 +5,7 @@ Welcome to the COA Interactive Photo Gallery project! This project showcs an int
 
 This project consists of two main challenges:
 
-1. **photo gallery: Photo Gallery**
+1. **Photo Gallery**
 2. **Coding Challenge: Array and String Transformations**
 
 ## UI Challenge: Photo Gallery
@@ -63,10 +63,11 @@ Use and test the interactive photo gallery:
 * Observe the responsive behavior by resizing the browser window or viewing it on different devices.
 
 ### Desktop View screenshot
-![Photo Gallery Screenshot](Desktop.png)
+![Photo Gallery Screenshot](DesktopView.png)
+![Photo Gallery Screenshot](MobileView.png)
 
 ### Mobile View
-![Photo Gallery Screenshot](Mobile View.png)
+(Desktop.png)
 
 ## Coding Challenge
 Description
